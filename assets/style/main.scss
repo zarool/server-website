@@ -1,0 +1,28 @@
+$bgColor: #0a0908;
+$secondaryBg: #49111C;
+$textColor: #F2F4F3;
+$grullo: #A9927D;
+$umber: #5E503F;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: $bgColor;
+    color: $textColor;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+@import "desktop";
+@import "page786p";
+@import "page500p";
