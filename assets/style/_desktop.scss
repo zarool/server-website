@@ -1,111 +1,114 @@
 body {
-    .menu {
-        width: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 10;
-        opacity: 0.8;
-        background-color: $secondaryBg;
+  // MENU
+  .menu {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    opacity: 0.8;
+    background-color: $secondaryBg;
 
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
 
+      li {
+        cursor: pointer;
+        list-style: none;
+        letter-spacing: 3px;
+        padding: 10px;
 
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: $textColor;
 
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-            padding: 10px;
+          &::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $textColor;
 
-            li {
-                cursor: pointer;
-                list-style: none;
-                letter-spacing: 3px;
-                padding: 10px;
-
-                a {
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: $textColor;
-
-                    &::after {
-                        display: block;
-                        content: '';
-                        width: 0;
-                        height: 2px;
-                        background-color: $textColor;
-
-                        transition: 0.3s all;
-                    }
-                }
-
-                &:hover a::after {
-                    width: 100%;
-                }
-            }
+            transition: 0.3s all;
+          }
         }
+
+        &:hover a::after {
+          width: 100%;
+        }
+      }
     }
 
-    .container {
-        width: 100%;
-        height: 100%;
+    .button {
+      display: none;
+    }
+  }
 
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
+  //CONTEXT
+  .container {
+    width: 100%;
+    height: 100%;
 
-        .article {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 
-            scroll-snap-align: center;
+    .article {
+      scroll-snap-align: center;
 
-            &__image {
-                position: relative;
-                opacity: 0.7;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+      &__image {
+        position: relative;
+        opacity: 0.7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 
-                .image__text {
-                    position: absolute;
-                    top: 50%;
-                    width: 100%;
-                    text-align: center;
-                    font-size: 2rem;
-                    letter-spacing: 0.7rem;
+        .image__text {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+          letter-spacing: 0.7rem;
 
-                    .text__border {
-                        text-transform: uppercase;
-                        background-color: $secondaryBg;
-                        color: $textColor;
-                        padding: 20px;
-                    }
-                }
-            }
-
-            .section {
-                text-align: center;
-                line-height: 1.5rem;
-                padding: 50px 80px;
-
-
-            }
+          .text__border {
+            text-transform: uppercase;
+            background-color: $secondaryBg;
+            color: $textColor;
+            padding: 20px;
+          }
         }
+      }
 
-        .img1 {
-            background-image: url('../images/bg1.jpg');
-            min-height: 100vh;
-        }
-
-        .img2 {
-            background-image: url('../images/bg2.jpg');
-            min-height: 75vh;
-        }
-
-        .img3 {
-            background-image: url('../images/bg1.jpg');
-            min-height: 75vh;
-        }
-
+      .section {
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 50px 80px;
+      }
     }
 
+    .img1 {
+      background-image: url("../images/bg1.jpg");
+      min-height: 100vh;
+    }
+
+    .img2 {
+      background-image: url("../images/bg2.jpg");
+      min-height: 75vh;
+    }
+
+    .img3 {
+      background-image: url("../images/bg3.jpg");
+      min-height: 75vh;
+    }
+
+    .img4 {
+      background-image: url("../images/bg1.jpg");
+      min-height: 75vh;
+    }
+  }
 }
