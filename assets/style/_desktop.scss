@@ -1,4 +1,5 @@
 body {
+
   // MENU
   .menu {
     width: 100%;
@@ -9,46 +10,54 @@ body {
     opacity: 0.8;
     background-color: $secondaryBg;
 
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 10px;
-
-      li {
-        cursor: pointer;
-        list-style: none;
-        letter-spacing: 3px;
+    &__option {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
         padding: 10px;
 
-        a {
-          text-decoration: none;
-          font-weight: bold;
-          color: $textColor;
-
-          &::after {
-            display: block;
-            content: "";
-            width: 0;
-            height: 2px;
-            background-color: $textColor;
-
-            transition: 0.3s all;
+        li {
+          &:first-child {
+            display: none;
           }
-        }
 
-        &:hover a::after {
-          width: 100%;
+          cursor: pointer;
+          list-style: none;
+          letter-spacing: 3px;
+          padding: 10px;
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            color: $textColor;
+
+            &::after {
+              display: block;
+              content: "";
+              width: 0;
+              height: 2px;
+              background-color: $textColor;
+
+              transition: 0.3s all;
+            }
+          }
+
+          &:hover a::after {
+            width: 100%;
+          }
         }
       }
     }
 
-    .button {
+    &__button {
       display: none;
     }
   }
 
   //CONTEXT
   .container {
+    z-index: 9;
+
     width: 100%;
     height: 100%;
 
@@ -56,9 +65,11 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 
-    .article {
+    .scroll {
       scroll-snap-align: center;
+    }
 
+    .article {
       &__image {
         position: relative;
         opacity: 0.7;
@@ -112,3 +123,5 @@ body {
     }
   }
 }
+
+@import "desktop_content";

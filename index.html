@@ -1,121 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/style/main.css" />
-    <title>Serwer</title>
-  </head>
-  <body>
-    <div class="menu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/style/main.css" />
+  <title>Serwer</title>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu__option">
       <ul>
-        <li><a href="#main">GŁÓWNA</a></li>
-        <li><a href="#questions">PYTANIA</a></li>
-        <li><a href="#form">FORMULARZ</a></li>
-        <li><a href="#contact">KONTAKT</a></li>
+        <li class="one"><input type="button" class="close" value="X"></li>
+        <li><a onclick="closeMenu()" href="#main">GŁÓWNA</a></li>
+        <li><a onclick="closeMenu()" href="#questions">PYTANIA</a></li>
+        <li><a onclick="closeMenu()" href="#form">FORMULARZ</a></li>
+        <li><a onclick="closeMenu()" href="#contact">KONTAKT</a></li>
       </ul>
-
-      <span class="button">MENU</span>
     </div>
 
-    <div class="container">
-      <!-- #### -->
-      <div id="main" class="article">
-        <div class="article__image img1">
-          <div class="image__text">
-            <span class="text__border">stronka fajnej szkoły (nie getel)</span>
-          </div>
+    <input type="button" class="menu__button" value="MENU">
+  </div>
+
+  <div class="container">
+    <!-- #### -->
+    <div id="main" class="article">
+      <div class="scroll article__image img1">
+        <div class="image__text">
+          <span class="text__border">stronka fajnej szkoły (nie getel)</span>
         </div>
-        <section class="section">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-          aperiam libero maxime dolorem, aut exercitationem consectetur modi
-          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-          aliquam!
-        </section>
       </div>
-      <!-- #### -->
-      <!-- #### -->
-      <div id="questions" class="article">
-        <div class="article__image img2">
-          <div class="image__text">
-            <span class="text__border">pytania</span>
-          </div>
-        </div>
-        <section class="section">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-          aperiam libero maxime dolorem, aut exercitationem consectetur modi
-          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-          aliquam!
-        </section>
-      </div>
-      <!-- #### -->
-      <!-- #### -->
-      <div id="form" class="article">
-        <div class="article__image img3">
-          <div class="image__text">
-            <span class="text__border">formularz</span>
-          </div>
-        </div>
-        <section class="section">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-          aperiam libero maxime dolorem, aut exercitationem consectetur modi
-          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-          aliquam!
-        </section>
-      </div>
-      <!-- #### -->
-      <!-- #### -->
-      <div id="contact" class="article">
-        <div class="article__image img4">
-          <div class="image__text">
-            <span class="text__border">kontakt | adres</span>
-          </div>
-        </div>
-        <section class="section">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-          aperiam libero maxime dolorem, aut exercitationem consectetur modi
-          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-          aliquam!
-        </section>
-      </div>
-      <!-- #### -->
+      <section class="scroll section">
+        <h2>tutaj jest amazing opis szkoły</h2>
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+        aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
+        provident fugit enim quis ab debitis sed! Debitis praesentium soluta
+        ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
+        corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
+        Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
+        optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
+        aperiam libero maxime dolorem, aut exercitationem consectetur modi
+        neque similique ex consequuntur! Sunt eligendi officia unde ab eos
+        quam eius labore eum, suscipit expedita error fugit voluptatibus id,
+        pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
+        aliquam!
+      </section>
     </div>
-  </body>
+    <!-- #### -->
+    <!-- #### -->
+    <div id="questions" class="article">
+      <div class="scroll article__image img2">
+        <div class="image__text">
+          <span class="text__border">pytania</span>
+        </div>
+      </div>
+      <section class="scroll section">
+        <h1>Masz pytania? Napisz do nas!</h1>
+      </section>
+    </div>
+    <!-- #### -->
+    <!-- #### -->
+    <div id="form" class="article">
+      <div class="scroll article__image img3">
+        <div class="image__text">
+          <span class="text__border">formularz</span>
+        </div>
+      </div>
+      <section class="scroll section">
+        <h1>Wyślij tutaj swoje pliki i zadania do nauczyciela!</h1>
+      </section>
+    </div>
+    <!-- #### -->
+    <!-- #### -->
+    <div id="contact" class="article">
+      <div class="scroll article__image img4">
+        <div class="image__text">
+          <span class="text__border">kontakt | adres</span>
+        </div>
+      </div>
+      <section class="scroll section">
+        <h1>Adres naszej zacnej szkoły</h1>
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+        aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
+        provident fugit enim quis ab debitis sed! Debitis praesentium soluta
+        ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
+        corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
+        Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
+        optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
+        aperiam libero maxime dolorem, aut exercitationem consectetur modi
+        neque similique ex consequuntur! Sunt eligendi officia unde ab eos
+        quam eius labore eum, suscipit expedita error fugit voluptatibus id,
+        pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
+        aliquam!
+      </section>
+    </div>
+    <!-- #### -->
+  </div>
+
+  <script src="./script/index.js"></script>
+</body>
+
 </html>
