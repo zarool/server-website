@@ -41,5 +41,41 @@ buttonClose.addEventListener("click", e => {
 
 
 function closeMenu() {
-    optionMenu.style.width = "0px";
+    if (screenWidth <= 800) {
+        optionMenu.style.width = "0px";
+    }
 }
+
+
+
+let panel__child = document.querySelectorAll(".panel__child");
+
+function moveChildren(dir) {
+    panel__child.forEach(function (elem) {
+
+        let currentChild = window.getComputedStyle(elem);
+        let currentTranslate = new WebKitCSSMatrix(currentChild.webkitTransform).m41;
+        // console.log(currentTranslate);
+
+        elem.style.transform = "translateX(" + (currentTranslate + dir) + "px)";
+    });
+}
+
+
+
+let arrowL = document.querySelectorAll(".left");
+arrowL.forEach(function (elem) {
+    elem.addEventListener("click", e => {
+        let panelWidth = document.querySelector(".panel").clientWidth;
+        moveChildren(panelWidth);
+    });
+});
+
+
+let arrowR = document.querySelectorAll(".right");
+arrowR.forEach(function (elem) {
+    elem.addEventListener("click", e => {
+        let panelWidth = document.querySelector(".panel").clientWidth;
+        moveChildren(-panelWidth);
+    });
+});

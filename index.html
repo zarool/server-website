@@ -1,107 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/220bfbd1f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <title>Serwer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/style/main.css" />
-  <title>Serwer</title>
-</head>
-
-<body>
-  <div class="menu">
-    <div class="menu__option">
-      <ul>
-        <li class="one"><input type="button" class="close" value="X"></li>
-        <li><a onclick="closeMenu()" href="#main">GŁÓWNA</a></li>
-        <li><a onclick="closeMenu()" href="#questions">PYTANIA</a></li>
-        <li><a onclick="closeMenu()" href="#form">FORMULARZ</a></li>
-        <li><a onclick="closeMenu()" href="#contact">KONTAKT</a></li>
-      </ul>
-    </div>
-
-    <input type="button" class="menu__button" value="MENU">
-  </div>
-
-  <div class="container">
-    <!-- #### -->
-    <div id="main" class="article">
-      <div class="scroll article__image img1">
-        <div class="image__text">
-          <span class="text__border">stronka fajnej szkoły (nie getel)</span>
-        </div>
+  <body>
+    <div class="menu">
+      <div class="menu__option">
+        <ul>
+          <li class="one"><input type="button" class="close" value="X" /></li>
+          <li><a onclick="closeMenu()" href="#main">GŁÓWNA</a></li>
+          <li><a onclick="closeMenu()" href="#questions">PYTANIA</a></li>
+          <li><a onclick="closeMenu()" href="#form">FORMULARZ</a></li>
+          <li><a onclick="closeMenu()" href="#contact">KONTAKT</a></li>
+        </ul>
       </div>
-      <section class="scroll section">
-        <h2>tutaj jest amazing opis szkoły</h2>
-        <br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-        aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-        provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-        ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-        corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-        Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-        optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-        aperiam libero maxime dolorem, aut exercitationem consectetur modi
-        neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-        quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-        pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-        aliquam!
-      </section>
-    </div>
-    <!-- #### -->
-    <!-- #### -->
-    <div id="questions" class="article">
-      <div class="scroll article__image img2">
-        <div class="image__text">
-          <span class="text__border">pytania</span>
-        </div>
-      </div>
-      <section class="scroll section">
-        <h1>Masz pytania? Napisz do nas!</h1>
-      </section>
-    </div>
-    <!-- #### -->
-    <!-- #### -->
-    <div id="form" class="article">
-      <div class="scroll article__image img3">
-        <div class="image__text">
-          <span class="text__border">formularz</span>
-        </div>
-      </div>
-      <section class="scroll section">
-        <h1>Wyślij tutaj swoje pliki i zadania do nauczyciela!</h1>
-      </section>
-    </div>
-    <!-- #### -->
-    <!-- #### -->
-    <div id="contact" class="article">
-      <div class="scroll article__image img4">
-        <div class="image__text">
-          <span class="text__border">kontakt | adres</span>
-        </div>
-      </div>
-      <section class="scroll section">
-        <h1>Adres naszej zacnej szkoły</h1>
-        <br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-        aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-        provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-        ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-        corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-        Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-        optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-        aperiam libero maxime dolorem, aut exercitationem consectetur modi
-        neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-        quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-        pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-        aliquam!
-      </section>
-    </div>
-    <!-- #### -->
-  </div>
 
-  <script src="./script/index.js"></script>
-</body>
+      <input type="button" class="menu__button" value="MENU" />
+    </div>
 
+    <div class="container">
+      <!-- #### -->
+      <div id="main" class="article">
+        <div class="scroll article__image img1">
+          <div class="image__text">
+            <span class="text__border">stronka fajnej szkoły (nie getel)</span>
+          </div>
+        </div>
+        <section class="section">
+          <h2>tutaj jest amazing opis szkoły</h2>
+          <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
+          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
+          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
+          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
+          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
+          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
+          aperiam libero maxime dolorem, aut exercitationem consectetur modi
+          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
+          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
+          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
+          aliquam!
+        </section>
+      </div>
+      <!-- #### -->
+      <!-- #### -->
+      <div id="questions" class="article">
+        <div class="scroll article__image img2">
+          <div class="image__text">
+            <span class="text__border">pytania</span>
+          </div>
+        </div>
+        <section class="section">
+          <h1>Masz pytania? Napisz do nas!</h1>
+
+          <!-- sending email form -->
+          <div class="panel">
+            <!-- <form action=""> -->
+
+            <div class="panel__child">
+              <div class="move"></div>
+              <div class="enter input">
+                <label for="fname">Imię: </label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Wpisz imię"
+                />
+                <label for="lname">Nazwisko: </label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Wpisz nazwisko"
+                />
+                <label for="email">E-mail: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Wpisz swój mail"
+                />
+              </div>
+              <div class="move right">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="panel__child">
+              <div class="move left">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="text input">
+                <label for="textarea">
+                  <h3>Wpisz treść swojej wiadomości:</h3>
+                </label>
+                <textarea
+                  name="input"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Wpisz tutaj swoją wiadomość"
+                ></textarea>
+              </div>
+              <div class="move right">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="panel__child">
+              <div class="move left">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="confirm input">
+                <h3>
+                  Na pewno wysłać? Naszą odpowiedź odeślemy na podanego maila!
+                </h3>
+                <input type="submit" value="Wyślij!" />
+              </div>
+              <div class="move"></div>
+            </div>
+            <!-- </form> -->
+          </div>
+        </section>
+      </div>
+      <!-- #### -->
+      <!-- #### -->
+      <div id="form" class="article">
+        <div class="scroll article__image img3">
+          <div class="image__text">
+            <span class="text__border">formularz</span>
+          </div>
+        </div>
+        <section class="section">
+          <h1>Wyślij tutaj swoje pliki i zadania do nauczyciela!</h1>
+
+          tutaj będzie cool możliwość dodania swojego pliku i wysłania go
+          <!-- sending files to database -->
+        </section>
+      </div>
+      <!-- #### -->
+      <!-- #### -->
+      <div id="contact" class="article">
+        <div class="scroll article__image img4">
+          <div class="image__text">
+            <span class="text__border">kontakt | adres</span>
+          </div>
+        </div>
+        <section class="section">
+          <h1>Adres naszej zacnej szkoły</h1>
+          <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
+          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
+          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
+          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
+          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
+          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
+          aperiam libero maxime dolorem, aut exercitationem consectetur modi
+          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
+          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
+          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
+          aliquam!
+        </section>
+      </div>
+      <!-- #### -->
+    </div>
+
+    <script src="./script/index.js"></script>
+  </body>
 </html>

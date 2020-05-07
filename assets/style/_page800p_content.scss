@@ -1,0 +1,53 @@
+body {
+    .container {
+        .article {
+            .section {
+                padding-bottom: 0;
+
+                .panel {
+                    height: 400px;
+
+                    &__child {
+                        width: 100%;
+                        grid-template-columns: repeat(1, 1fr);
+
+                        .move {
+                            cursor: default;
+
+                            i {
+                                font-size: 4rem;
+                                margin: auto;
+                            }
+                        }
+                    }
+
+                    .input {
+                        width: 100%;
+                        gap: 0px;
+                        row-gap: 30px;
+                    }
+
+                    .enter {
+                        overflow: hidden;
+                    }
+
+                    .text {
+
+                        textarea {
+                            width: 80%;
+                            padding: 5px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .confirm {
+                        input {
+                            cursor: default;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

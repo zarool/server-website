@@ -18,7 +18,7 @@ body .menu {
   left: 0;
   top: 0;
   z-index: 10;
-  opacity: 0.8;
+  opacity: 0.95;
   background-color: #49111C;
 }
 
@@ -78,7 +78,7 @@ body .container {
 }
 
 body .container .scroll {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 body .container .article__image {
@@ -119,17 +119,124 @@ body .container .img1 {
 
 body .container .img2 {
   background-image: url("../images/bg2.jpg");
-  min-height: 75vh;
+  min-height: 300px;
 }
 
 body .container .img3 {
   background-image: url("../images/bg3.jpg");
-  min-height: 75vh;
+  min-height: 300px;
 }
 
 body .container .img4 {
   background-image: url("../images/bg1.jpg");
-  min-height: 75vh;
+  min-height: 300px;
+}
+
+body .container .article .section h1 {
+  margin: 0 0 15px 0;
+}
+
+body .container .article .section .panel {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+body .container .article .section .panel__child {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+body .container .article .section .panel__child:nth-child(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+body .container .article .section .panel__child:nth-child(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+body .container .article .section .panel__child .move {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+body .container .article .section .panel__child .move i {
+  font-size: 3rem;
+  margin: auto;
+}
+
+body .container .article .section .panel .input {
+  font-size: 1.3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+body .container .article .section .panel .enter {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body .container .article .section .panel .enter input {
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #F2F4F3;
+  outline: none;
+  color: #F2F4F3;
+}
+
+body .container .article .section .panel .text textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  font-size: 1.3rem;
+}
+
+body .container .article .section .panel .confirm {
+  gap: 50px;
+}
+
+body .container .article .section .panel .confirm input {
+  width: 100%;
+  height: 50px;
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #F2F4F3;
+  outline: none;
+  color: #F2F4F3;
+  cursor: pointer;
+}
+
+body .container .article .section .panel .confirm input:active {
+  background-color: #A9927D;
+  color: #0a0908;
 }
 
 @media only screen and (max-width: 800px) {
@@ -221,6 +328,40 @@ body .container .img4 {
   }
   body .container .article .section {
     padding: 50px 40px;
+  }
+  body .container .article .section {
+    padding-bottom: 0;
+  }
+  body .container .article .section .panel {
+    height: 400px;
+  }
+  body .container .article .section .panel__child {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  body .container .article .section .panel__child .move {
+    cursor: default;
+  }
+  body .container .article .section .panel__child .move i {
+    font-size: 4rem;
+    margin: auto;
+  }
+  body .container .article .section .panel .input {
+    width: 100%;
+    gap: 0px;
+    row-gap: 30px;
+  }
+  body .container .article .section .panel .enter {
+    overflow: hidden;
+  }
+  body .container .article .section .panel .text textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  body .container .article .section .panel .confirm input {
+    cursor: default;
   }
 }
 /*# sourceMappingURL=main.css.map */
