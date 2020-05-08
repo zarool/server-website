@@ -36,7 +36,7 @@ body {
                         }
 
                         .move {
-                            width: 100%;
+                            width: 80%;
                             height: 100%;
 
                             display: flex;
@@ -114,7 +114,16 @@ body {
 
                 // panel przesył plików
 
-                .send-file {}
+                input[type="file"] {
+                    display: none;
+                }
+
+                .send-file {
+                    border: 1px solid #ccc;
+                    display: inline-block;
+                    padding: 6px 12px;
+                    cursor: pointer;
+                }
             }
         }
     }

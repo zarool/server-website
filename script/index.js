@@ -61,21 +61,54 @@ function moveChildren(dir) {
     });
 }
 
+/// set event on click for each
+let disabledTime = 1000;
 
+arrowL = document.querySelectorAll(".left");
+arrowR = document.querySelectorAll(".right");
 
-let arrowL = document.querySelectorAll(".left");
 arrowL.forEach(function (elem) {
+
     elem.addEventListener("click", e => {
-        let panelWidth = document.querySelector(".panel").clientWidth;
-        moveChildren(panelWidth);
+
+        if (!elem.disabled) {
+            let panelWidth = document.querySelector(".panel").clientWidth;
+            moveChildren(panelWidth);
+        }
+
+        arrowL.forEach(function (e) {
+            e.disabled = true;
+        })
+
+        setTimeout(function () {
+            arrowL.forEach(function (e) {
+                e.disabled = false;
+            })
+        }, disabledTime);
+
     });
+
 });
 
-
-let arrowR = document.querySelectorAll(".right");
 arrowR.forEach(function (elem) {
+
     elem.addEventListener("click", e => {
-        let panelWidth = document.querySelector(".panel").clientWidth;
-        moveChildren(-panelWidth);
+
+        if (!elem.disabled) {
+            let panelWidth = document.querySelector(".panel").clientWidth;
+            moveChildren(-panelWidth);
+        }
+
+        arrowR.forEach(function (e) {
+            e.disabled = true;
+        })
+
+        setTimeout(function () {
+            arrowR.forEach(function (e) {
+                e.disabled = false;
+            })
+        }, disabledTime);
+
     });
+
 });

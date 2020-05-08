@@ -33,10 +33,9 @@ body .menu__option ul {
 }
 
 body .menu__option ul li {
-  cursor: pointer;
+  padding: 10px;
   list-style: none;
   letter-spacing: 3px;
-  padding: 10px;
 }
 
 body .menu__option ul li:first-child {
@@ -44,6 +43,8 @@ body .menu__option ul li:first-child {
 }
 
 body .menu__option ul li a {
+  cursor: pointer;
+  height: 100%;
   text-decoration: none;
   font-weight: bold;
   color: #F2F4F3;
@@ -170,7 +171,7 @@ body .container .article .section .panel__child:nth-child(3) {
 }
 
 body .container .article .section .panel__child .move {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +238,17 @@ body .container .article .section .panel .confirm input {
 body .container .article .section .panel .confirm input:active {
   background-color: #A9927D;
   color: #0a0908;
+}
+
+body .container .article .section input[type="file"] {
+  display: none;
+}
+
+body .container .article .section .send-file {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
@@ -330,7 +342,9 @@ body .container .article .section .panel .confirm input:active {
     padding: 50px 40px;
   }
   body .container .article .section {
-    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
   }
   body .container .article .section .panel {
     height: 400px;

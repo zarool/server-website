@@ -107,7 +107,7 @@
               </div>
               <div class="text input">
                 <label for="textarea">
-                  <h3>Wpisz treść swojej wiadomości:</h3>
+                  <h3>Wpisz tutaj swoją wiadomość:</h3>
                 </label>
                 <textarea
                   name="input"
@@ -148,8 +148,73 @@
         <section class="section">
           <h1>Wyślij tutaj swoje pliki i zadania do nauczyciela!</h1>
 
-          tutaj będzie cool możliwość dodania swojego pliku i wysłania go
-          <!-- sending files to database -->
+          <!-- sending files -->
+          <div class="panel">
+            <!-- <form action=""> -->
+
+            <div class="panel__child">
+              <div class="move"></div>
+              <div class="enter input">
+                <label for="fname">Imię: </label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Wpisz imię"
+                />
+                <label for="lname">Nazwisko: </label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Wpisz nazwisko"
+                />
+                <label for="email">E-mail: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Wpisz swój mail"
+                />
+              </div>
+              <div class="move right">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="panel__child">
+              <div class="move left">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="text input">
+                <label for="textarea">
+                  <h3>Wybierz swój plik do wysłania:</h3>
+                </label>
+                <label class="send-file">
+                  <input type="file" />
+                  <i class="fas fa-file-upload"></i>
+                  Wybierz pliki
+                </label>
+              </div>
+              <div class="move right">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="panel__child">
+              <div class="move left">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="confirm input">
+                <h3>
+                  Na pewno wysłać? Naszą odpowiedź odeślemy na podanego maila!
+                </h3>
+                <input type="submit" value="Wyślij!" />
+              </div>
+              <div class="move"></div>
+            </div>
+            <!-- </form> -->
+          </div>
+          <!-- end of div -->
         </section>
       </div>
       <!-- #### -->
@@ -163,18 +228,9 @@
         <section class="section">
           <h1>Adres naszej zacnej szkoły</h1>
           <br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          aspernatur sapiente, minima ipsam, doloremque laborum, quaerat
-          provident fugit enim quis ab debitis sed! Debitis praesentium soluta
-          ratione, quasi quae accusamus ut omnis, sequi optio necessitatibus eum
-          corporis magnam quas, ipsa perferendis consequuntur magni deserunt.
-          Officiis culpa inventore, consequatur soluta nihil reprehenderit iusto
-          optio ut quo nulla sit perferendis iste nostrum. Eveniet itaque,
-          aperiam libero maxime dolorem, aut exercitationem consectetur modi
-          neque similique ex consequuntur! Sunt eligendi officia unde ab eos
-          quam eius labore eum, suscipit expedita error fugit voluptatibus id,
-          pariatur magnam qui accusamus quasi dicta voluptate rem, voluptatem
-          aliquam!
+          <p>Tel: +48 123 123 123</p>
+          <p>Miejscowość ABC</p>
+          <p>11-111 Miasto DEF</p>
         </section>
       </div>
       <!-- #### -->
